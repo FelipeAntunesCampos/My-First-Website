@@ -1,35 +1,34 @@
-# Meu Primeiro Site 🎉
+# My First Website 🎉
 
-Olá! Este é o repositório do **meu primeiríssimo site**, uma jornada emocionante de aprendizado e aplicação de **HTML** e **CSS**.
+Hello there! This is the repository for **my very first website**, an exciting journey of learning and applying **HTML** and **CSS**.
 
-É um projeto que marca o início da minha caminhada no desenvolvimento web, e estou muito feliz em compartilhá-lo!
-
----
-
-## Sobre o Projeto
-
-Este site foi desenvolvido com o objetivo principal de consolidar meus conhecimentos em HTML para estruturação de conteúdo e CSS para estilização e design. Cada linha de código aqui representa um passo no meu aprendizado e a materialização de uma ideia.
+This project marks the beginning of my path in web development, and I'm thrilled to share it with you!
 
 ---
 
-## Tecnologias Utilizadas
+## About This Project
 
-* **HTML5:** A linguagem base para a estrutura e conteúdo do site.
-* **CSS3:** Utilizado para dar vida ao design, cores e layout, explorando a estilização.
+This website was developed with the primary goal of consolidating my knowledge in HTML for content structuring and CSS for styling and design. Every line of code here represents a step in my learning process and the realization of an idea.
 
 ---
 
-## Como Visualizar
+## Technologies Used
 
-Para ver este site em ação, você pode:
+* **HTML5:** The core language for the website's structure and content.
+* **CSS3:** Utilized to bring the design, colors, and layout to life, exploring various styling techniques.
 
-1.  **Clonar este repositório** para sua máquina local:
+---
+
+## How to View
+
+To see this website in action, you can:
+
+1.  **Clone this repository** to your local machine:
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO]
+    git clone [https://github.com/FelipeAntunesCampos/My-First-Website.git](https://github.com/FelipeAntunesCampos/My-First-Website.git)
     ```
-    (Lembre-se de substituir `[URL_DO_SEU_REPOSITORIO]` pelo link real do seu repositório no GitHub!)
-2.  **Abrir o arquivo `index.html`** diretamente no seu navegador.
+2.  **Open the `index.html` file** directly in your web browser.
 
 ---
 
-Espero que este projeto inspire outros iniciantes e mostre um pouco do que estou aprendendo! Qualquer feedback é muito bem-vindo.
+I hope this project inspires other beginners and showcases a bit of what I'm learning! Any feedback is most welcome.

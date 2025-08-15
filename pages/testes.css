@@ -18,7 +18,7 @@ body {
     /* Garante que o body ocupe no mínimo 100% da altura da viewport */
     min-height: 100vh;
     /* Define a altura da linha do texto */
-    line-height: 1.6;
+    line-height: 1;
     /* Define a cor de fundo da página */
     background-color: #f4f4f9;
     /* Define a cor do texto principal */
@@ -38,7 +38,7 @@ header {
 
 #header-bio {
     /* Margem superior para separar o texto do título */
-    margin-top: 10px;
+    margin-top: 50px;
     /* Tamanho da fonte para a biografia */
     font-size: 1.2em;
     /* Espessura da fonte, tornando-a mais leve */
@@ -61,24 +61,24 @@ main {
 }
 
 /* Estilo unificado para as seções - Unified style for sections */
-#sobre-mim,
-#meus-hobbies {
+#conteudos-enem,
+#meus-conteudos {
     /* Cor de fundo cinza claro para as seções */
     background-color: #e0e0e8;
     /* Largura de 90% do contêiner pai */
-    width: 100%;
+    width: 1000%;
     /* Largura máxima para evitar que as seções fiquem muito grandes */
-    max-width: 900px;
+    max-width: 1000px;
     /* Espaçamento interno */
     padding: 30px;
     /* Borda arredondada */
     border-radius: 12px;
     /* Sombra para dar um efeito de profundidade */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-#titulo-sobre-mim,
-#titulo-meus-hobbies {
+#titulo-sobre-enem {
     /* Tamanho da fonte do título */
     font-size: 2em;
     /* Linha inferior para decorar o título */
@@ -93,7 +93,22 @@ main {
     text-align: center;
 }
 
-.texto-sobre-mim {
+#titulo-meus-conteudos {
+    /* Tamanho da fonte do título */
+    font-size: 1.7em;
+    /* Linha inferior para decorar o título */
+    border-bottom: 2px solid #1a3d5a;
+    /* Espaçamento abaixo da linha */
+    padding-bottom: 10px;
+    /* Margem inferior */
+    margin-bottom: 25px;
+    /* Cor do texto do título */
+    color: #1a3d5a;
+    /* Alinhamento do título ao centro */
+    text-align: center;
+}
+
+.texto-sobre-enem {
     /* Tamanho da fonte do texto */
     font-size: 1.1em;
     /* Altura da linha para melhor legibilidade */
@@ -102,7 +117,7 @@ main {
     text-align: justify;
 }
 
-#texto-sobre-mim2 {
+#texto-sobre-enem2 {
     /* Margem superior para separar do parágrafo anterior */
     margin-top: 20px;
     /* Texto em negrito */
@@ -111,20 +126,19 @@ main {
     text-align: center;
 }
 
-#meus-hobbies {
+#meus-conteudos {
     /* Alinhamento do texto ao centro para todo o conteúdo da seção */
     text-align: center;
-    justify-content: center;
 }
 /* Estilo para os links dentro da seção de hobbies */
-#meus-hobbies li a {
+#meus-conteudos li a {
     /* Faz o link herdar a cor do texto do item da lista (no caso, branco) */
     color: inherit;
     /* Remove o sublinhado padrão dos links */
     text-decoration: none;
 }
 
-#titulo-meus-hobbies {
+#titulo-meus-conteudos {
     /* Margem inferior para espaçamento */
     margin-bottom: 30px;
 }
@@ -138,8 +152,7 @@ ul {
     display: flex;
     /* Centraliza os itens da lista horizontalmente */
     justify-content: center;
-    /* Permite que os itens da lista quebrem para a próxima linha */
-    flex-wrap: wrap;
+    /* Permite que os itens da lista quebrem para a próxima linha "flex-wrap: wrap;" */
     /* Espaço entre os itens da lista */
     gap: 20px;
 }

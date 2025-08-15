@@ -32,3 +32,22 @@ To see this website in action, you can:
 ---
 
 I hope this project inspires other beginners and showcases a bit of what I'm learning! Any feedback is most welcome.
+
+## Some important informations 
+-Target =  redirecionamento de guia, ou seja, abrirá uma nova guia.
+-A tag ul define uma lista não ordenada, que é uma lista de itens sem uma ordem específica. Por padrão, os navegadores exibem os itens de uma lista não ordenada com marcadores, como bolinhas ou quadrados.
+Pense nela como a "caixa" que contém todos os itens da lista.
+Exemplo:
+HTML
+<ul>
+  <li>Item A</li>
+  <li>Item B</li>
+  <li>Item C</li>
+</ul>
+
+A tag <li> define um item de lista. Cada <li> deve estar dentro de uma tag de lista, como <ul> (lista não ordenada) ou <ol> (lista ordenada).
+Pense em cada <li> como um único item dentro da "caixa" que a <ul> ou <ol> criou.
+Exemplo:
+HTML
+<ul>
+  <li>Primeiro Item</li>  <li>Segundo Item</li>   <li>Terceiro Item</li>  </ul>

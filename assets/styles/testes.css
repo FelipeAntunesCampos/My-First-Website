@@ -1,11 +1,11 @@
 /* RESET DO CSS */
 * {
+    /* Garante que o padding e a borda sejam incluídos no tamanho total do elemento */
+    box-sizing: border-box;
     /* Define margem 0 para todos os elementos */
     margin: 0;
     /* Define padding 0 para todos os elementos */
     padding: 0;
-    /* Garante que o padding e a borda sejam incluídos no tamanho total do elemento */
-    box-sizing: border-box;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
     /* Garante que o body ocupe no mínimo 100% da altura da viewport */
     min-height: 100vh;
     /* Define a altura da linha do texto */
-    line-height: 1;
+    line-height: 1.6; /* Ajustado para melhor legibilidade */
     /* Define a cor de fundo da página */
     background-color: #f4f4f9;
     /* Define a cor do texto principal */
@@ -38,7 +38,7 @@ header {
 
 #header-bio {
     /* Margem superior para separar o texto do título */
-    margin-top: 50px;
+    margin-top: 10px; /* Ajustado para um espaçamento mais proporcional */
     /* Tamanho da fonte para a biografia */
     font-size: 1.2em;
     /* Espessura da fonte, tornando-a mais leve */
@@ -60,13 +60,13 @@ main {
     gap: 30px;
 }
 
-/* Estilo unificado para as seções - Unified style for sections */
+/* Estilo unificado para as seções */
 #conteudos-enem,
 #meus-conteudos {
     /* Cor de fundo cinza claro para as seções */
     background-color: #e0e0e8;
     /* Largura de 90% do contêiner pai */
-    width: 1000%;
+    width: 100%; /* Ajustado para um valor mais funcional */
     /* Largura máxima para evitar que as seções fiquem muito grandes */
     max-width: 1000px;
     /* Espaçamento interno */
@@ -78,24 +78,9 @@ main {
     text-align: center;
 }
 
-#titulo-sobre-enem {
+#titulo-sobre-enem, #titulo-meus-conteudos {
     /* Tamanho da fonte do título */
-    font-size: 2em;
-    /* Linha inferior para decorar o título */
-    border-bottom: 2px solid #1a3d5a;
-    /* Espaçamento abaixo da linha */
-    padding-bottom: 10px;
-    /* Margem inferior */
-    margin-bottom: 25px;
-    /* Cor do texto do título */
-    color: #1a3d5a;
-    /* Alinhamento do título ao centro */
-    text-align: center;
-}
-
-#titulo-meus-conteudos {
-    /* Tamanho da fonte do título */
-    font-size: 1.7em;
+    font-size: 2em; /* Unificado para consistência */
     /* Linha inferior para decorar o título */
     border-bottom: 2px solid #1a3d5a;
     /* Espaçamento abaixo da linha */
@@ -126,21 +111,27 @@ main {
     text-align: center;
 }
 
+/* Estilo para a imagem */
+.enem-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 25px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
 #meus-conteudos {
     /* Alinhamento do texto ao centro para todo o conteúdo da seção */
     text-align: center;
 }
+
 /* Estilo para os links dentro da seção de hobbies */
 #meus-conteudos li a {
     /* Faz o link herdar a cor do texto do item da lista (no caso, branco) */
     color: inherit;
     /* Remove o sublinhado padrão dos links */
     text-decoration: none;
-}
-
-#titulo-meus-conteudos {
-    /* Margem inferior para espaçamento */
-    margin-bottom: 30px;
 }
 
 ul {
@@ -152,7 +143,8 @@ ul {
     display: flex;
     /* Centraliza os itens da lista horizontalmente */
     justify-content: center;
-    /* Permite que os itens da lista quebrem para a próxima linha "flex-wrap: wrap;" */
+    /* Permite que os itens da lista quebrem para a próxima linha */
+    flex-wrap: wrap; /* Adicionado para responsividade */
     /* Espaço entre os itens da lista */
     gap: 20px;
 }
@@ -190,14 +182,13 @@ li:hover {
 
 /* --- Estilos para o Rodapé --- */
 
-/* Estiliza a lista <ul> dentro do <footer> para alinhar os itens */
 footer {
     /* Mantenha o fundo do rodapé com a cor que você já usava nas seções de conteúdo */
     background-color: #e0e0e8;
     color: #1a3d5a;
     text-align: center;
     padding: 20px;
-    font-size: 1,2em;
+    font-size: 1.2em;
 }
 
 footer ul {
@@ -209,11 +200,8 @@ footer ul {
     margin-top: 15px;
 }
 
-/* Estiliza cada item <li> dentro da lista do rodapé */
 footer li {
-    /* Define a cor de fundo das "caixinhas" com o mesmo azul escuro do rodapé e header */
     background-color: #1a3d5a;
-    /* Define a cor do texto para branco */
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 8px;
@@ -223,18 +211,74 @@ footer li {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Define o estilo para o item <li> quando o mouse passa por cima */
 footer li:hover {
-    /* Altera a cor de fundo para uma tonalidade mais clara de azul no hover */
     background-color: #3b6180;
-    /* Move a "caixinha" 3px para cima, criando um efeito de "levantar" */
     transform: translateY(-3px);
-    /* Aumenta a sombra para um efeito mais pronunciado */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-/* Estiliza o link <a> dentro do item de lista do rodapé */
 footer li a {
     color: inherit;
     text-decoration: none;
+}
+
+
+/* =========================== */
+/* RESPONSIVIDADE PARA DISPOSITIVOS MÓVEIS */
+/* =========================== */
+
+/* Telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    header {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #header-bio {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    #conteudos-enem,
+    #meus-conteudos {
+        padding: 20px;
+    }
+
+    #titulo-sobre-enem,
+    #titulo-meus-conteudos {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .texto-sobre-enem {
+        font-size: 1em;
+    }
+    
+    ul {
+        flex-direction: column;
+    }
+    
+    li {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    /* Rodapé responsivo */
+    .footer-responsivo ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .footer-responsivo li {
+        width: 100%;
+    }
 }

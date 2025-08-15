@@ -225,3 +225,64 @@ footer li a {
     color: inherit;
     text-decoration: none;
 }
+
+/* =========================== */
+/* RESPONSIVIDADE PARA DISPOSITIVOS MÓVEIS */
+/* =========================== */
+
+/* Telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    header {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #header-bio {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    #sobre-mim,
+    #meus-hobbies {
+        padding: 20px;
+    }
+
+    #titulo-sobre-mim,
+    #titulo-meus-hobbies {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .texto-sobre-mim {
+        font-size: 1em;
+    }
+    
+    ul {
+        /* Permite que os itens da lista sejam exibidos em coluna em telas pequenas */
+        flex-direction: column;
+    }
+    
+    li {
+        width: 100%;
+        max-width: 300px; /* Limita a largura para não ocupar a tela toda em dispositivos maiores */
+        margin: 0 auto;
+    }
+    
+    /* Rodapé responsivo */
+    .footer-responsivo ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .footer-responsivo li {
+        width: 100%;
+    }
+}
